@@ -32,10 +32,35 @@ public class apcsatesttemp {
 				dScale = in.nextInt();
 			}else if ( oScale == 'C' ){
 				if(dScale == 'F'){
-					int fahrenheit = (celsius *(9/5)) + 32; 
-					System.out.println("%.2f\n", fahrenheit + "equals" + oScale);
+					int fahrenheit = (temp *(9/5)) + 32; 
+					int celsius = temp;
+					System.out.println("%.2f\n", fahrenheit + "equals" + celsius);
 				}else if(dScale == 'K'){
+					int kelvin = temp + 273.15; 
+					int celsius = temp;
+					System.out.println("%.2f\n", kelvin + "equals" + celsius);
+			}else if ( oScale == 'F' ){
+				if(dScale == 'C'){
+					int celsius = (temp - 32) * (9/5); 
+					int fahrenheit = temp;
+					System.out.println("%.2f\n", celsius + "equals" + fahrenheit);
+				}else if(dScale == 'K'){
+					int kelvin = ((temp - 32) * (9/5)) + 273.15; 
+					int fahrenheit = temp;
+					System.out.println("%.2f\n", kelvin + "equals" + fahrenheit);
+				}
+			}else if ( oScale == 'C' ){
+				if(dScale == 'F'){
+					int celsius = temp - 273.15; 
+					int kelvin = temp;
+					System.out.println("%.2f\n", celsius + "equals" + kelvin);
+				}else if(dScale == 'K'){
+					int fahrenheit = ((temp - 273.15) *(9/5)) + 32; 
+					int kelvin = temp;
+					System.out.println("%.2f\n", fahrenheit + "equals" + kelvin);
+				}
 			}
 		}
 	}
+}
 }
