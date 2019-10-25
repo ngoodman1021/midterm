@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class apcsatesttemp {
 	
-	private static Scanner in = newe Scanner(System.in){
+	private static Scanner in = new Scanner(System.in);
 		public static void main(String[] args){
 			
 			apcsatesttemp ts = new apcsatesttemp();
@@ -62,5 +62,4 @@ public class apcsatesttemp {
 			}
 		}
 	}
-}
 }
